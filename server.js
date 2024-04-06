@@ -32,7 +32,7 @@ app.use("/api/v1/product", productRoutes);
 
 //rest api
 app.use('*',function(req,res){
-  res.sendfile(path.join(__dirname,'./client/build/index.html'));
+  res.sendFile(path.join(__dirname,'./client/build/index.html'));
 });
 //esmodulefix
 const __filename=fileURLToPath(import.meta.url);
